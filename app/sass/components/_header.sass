@@ -1,0 +1,144 @@
+@import "vars"
+
+.header
+	//height: 188px
+	padding: 43.75px 0
+	width: 100%
+	background-color: #FFFCF8
+	position: relative
+	z-index: 1000
+	&-logo
+		position: absolute
+		bottom: 14px
+		left: 50%
+		transform: translate(-50%,0)
+		img,svg
+			max-width: 200px
+	&-menu,&-menu ul
+		display: flex
+		flex-flow: row nowrap
+		align-items: center
+	&-menu
+		justify-content: space-between
+		ul
+			margin: 0 -75px
+			li
+				padding: 0 75px
+				a
+					font-size: 25px
+					line-height: 1.5
+					font-weight: bold
+					color: #2A502C
+					text-transform: uppercase
+					letter-spacing: 0.015em
+	&-bar span,&-bar span:before,&-bar span:after
+		display: block
+		height: 3px
+		width: 32px
+		position: absolute
+		top: 50%
+		margin-top: -1.5px
+		left: 50%
+		margin-left: -16px
+		background: #2A502C
+	&-bar
+		position: absolute
+		top: 50%
+		right: 15px
+		transform: translate(0,-50%)
+		width: 40px
+		height: 40px
+		z-index: 1000
+		cursor: pointer
+		display: none
+		span
+			&:after
+				content: ''
+				transition: $transition
+				margin-top: 11px
+			&:before
+				content: ''
+				transition: $transition
+				margin-top: -13px
+
+@media only screen and (max-width : 1500px)
+	.header
+		display: flex
+		align-items: center
+		padding: 30px 0
+		.wrapper
+			width: 100%
+		&-logo
+			top: 50%
+			bottom: auto
+			transform: translate(-50%,-50%)
+			img,svg
+				max-width: 180px
+
+@media only screen and (max-width : 1240px)
+	.header
+		min-height: 90px
+		padding: 10px 0
+		&-logo
+			img,svg
+				max-width: 150px
+		&-menu
+			ul
+				margin: 0 -15px
+				li
+					padding: 0 15px
+					a
+						font-size: 26px
+
+@media only screen and (max-width : 768px)
+	.header
+		display: block
+		position: fixed
+		top: 0
+		left: 0
+		min-height: 80px
+		.wrapper
+			display: block
+		&-logo
+			position: relative
+			top: auto
+			left: auto
+			transform: none
+			z-index: 1001
+			img,svg
+				max-width: 120px
+		&-menu
+			position: fixed
+			top: 0
+			right: -110%
+			width: 100%
+			height: 100%
+			background-color: #fff
+			z-index: 1000
+			overflow-x: hidden
+			overflow-y: auto
+			display: block
+			padding: 100px 15px 20px
+			text-align: center
+			transition: right $transition
+			ul
+				display: block
+				margin: 0
+				li
+					padding: 0 0 20px
+		&-bar
+			display: block
+			z-index: 1200
+		&.header-active
+			.header
+				&-bar
+					span
+						background: transparent
+						&:after
+							transform: rotate(-135deg)
+							margin-top: 0
+						&:before
+							transform: rotate(135deg)
+							margin-top: 0
+				&-menu
+					right: 0

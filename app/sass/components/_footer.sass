@@ -1,0 +1,117 @@
+@import "vars"
+
+.footer
+	background-color: $colorMain
+	padding: 101px 0 111px
+	.wrapper
+		max-width: 1396px
+		display: flex
+		flex-flow: row nowrap
+		align-items: center
+	&-logo
+		width: 100%
+		padding-right: 29px
+	&-main
+		width: 535px
+		min-width: 535px
+		position: relative
+		text-align: center
+		padding-right: 60px
+	&-menu
+		li
+			padding: 0 0 22px
+			a
+				display: inline-block
+				font-size: 25px
+				line-height: 1
+				font-weight: bold
+				text-transform: uppercase
+				color: #FFFCF8
+	&-social
+		display: flex
+		flex-flow: row nowrap
+		align-items: center
+		justify-content: center
+		margin: 0 -12px
+		li
+			padding: 0 12px
+			a
+				img,svg
+					display: block
+					max-width: 31px
+					max-width: 31px
+	p
+		font-size: 28px
+		line-height: 1
+		color: #FFFCF8
+		max-width: 414px
+		margin: 0 auto 29px
+	.border-btn
+		min-width: 402px
+		font-size: 34px
+		line-height: 38px
+		border: 2px solid #fff
+		padding: 22px 20px 18px
+		max-width: 446px
+		width: 100%
+		margin-bottom: 29px
+
+@media only screen and (max-width : 1240px)
+	.footer
+		padding: 80px 0
+		&-logo
+			padding-right: 80px
+		&-main
+			min-width: 470px
+			width: 470px
+		&-menu
+			li
+				a
+					font-size: 22px
+
+@media only screen and (max-width : 1000px)
+	.footer
+		&-main
+			min-width: 400px
+			width: 400px
+		&-menu
+			padding-bottom: 20px
+			li
+				padding-bottom: 15px
+		p
+			font-size: 22px
+
+@media only screen and (max-width : 768px)
+	.footer
+		padding: 50px 0
+		text-align: center
+		.wrapper
+			display: block
+		.border-btn
+			min-width: 290px
+			font-size: 26px
+			line-height: 31px
+		&-main
+			min-width: auto
+			width: 100%
+			padding-right: 0
+		&-social
+			justify-content: center
+			position: static
+			padding-bottom: 30px
+		&-menu
+			display: block
+			text-align: center
+			padding-bottom: 0
+			margin-bottom: 15px
+			li
+				padding: 0 20px 15px
+		p
+			font-size: 22px
+			max-width: 410px
+			margin: 0 auto 30px
+		&-logo
+			padding: 0 0 35px
+			img,svg
+				max-width: 260px
+				margin: 0 auto

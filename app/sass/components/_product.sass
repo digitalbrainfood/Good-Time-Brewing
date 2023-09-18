@@ -1,0 +1,301 @@
+@import "vars"
+
+.product
+	background: #FFFCF8
+	&-top
+		border-top: 1px solid #2A502C
+		padding: 82px 0 91px
+		.wrapper
+			display: flex
+			flex-flow: row nowrap
+			align-items: center
+			max-width: 1632px
+	&-img
+		min-width: 631px
+		width: 631px
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 0 50px 65px 122px
+		img,svg
+			max-width: 482px
+	&-main
+		width: 100%
+		padding-left: 26px
+		text-align: center
+		.primary-btn
+			max-width: 446px
+			width: 100%
+		&-wrap
+			max-width: 812px
+	&-head
+		display: block
+		margin: 0 0 28px
+		font-size: 64px
+		line-height: 1
+		font-weight: bold
+		color: #2A502C
+	&-top,&-middle,&-bottom,&-block
+		p
+			font-size: 35px
+			line-height: 1
+			color: #2A502C
+			&.product-small
+				font-size: 25px
+				margin-bottom: 40px
+	&-bl
+		margin: 35px auto
+		max-width: 482px
+		padding: 29px 12px 10px
+		border: 3px solid #437D3A
+		&-title
+			display: block
+			font-size: 35px
+			line-height: 1
+			font-weight: bold
+			text-transform: uppercase
+			color: #2A502C
+			margin: 0 0 8px
+			span
+				text-decoration: underline
+		ul
+			li
+				font-size: 25px
+				line-height: 1.5
+				color: #2A502C
+	&-middle
+		display: flex
+		flex-flow: row nowrap
+		align-items: center
+		justify-content: space-between
+		padding: 28px 0 28px 70px
+		background: #DCB14C
+		&-info
+			display: flex
+			flex-flow: row nowrap
+			align-items: center
+			padding-right: 40px
+			width: 100%
+			ul
+				padding-left: 78px
+				li
+					padding-left: 54px
+					font-size: 40px
+					line-height: 1
+					font-weight: 500
+					text-transform: capitalize
+					color: #fff
+					position: relative
+					margin: 12.5px
+					&::after
+						content: ''
+						position: absolute
+						top: 0
+						left: 0
+						width: 30px
+						height: 30px
+						background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1.5' y='1.5' width='27' height='27' stroke='white' stroke-width='3'/%3E%3Cpath d='M11.8817 20.911L5 14.2811L6.32104 13.0084L11.8817 18.3656L23.679 7L25 8.27271L11.8817 20.911Z' fill='%23437D3A'/%3E%3C/svg%3E%0A")
+						background-repeat: no-repeat
+						background-position: center
+						background-size: contain
+		&-tit
+			display: block
+			min-width: 376px
+			width: 376px
+			text-align: center
+			font-size: 75px
+			line-height: 1
+			font-weight: bold
+			color: #fff
+			text-transform: uppercase
+			margin: 0
+		&-img
+			min-width: 675px
+			width: 675px
+	&-block
+		text-align: center
+		padding: 44px 0 58px
+		.product-head
+			margin-bottom: 10px
+		p
+			max-width: 1104px
+			margin: 0 auto 30px
+		img,svg
+			max-width: 500px
+			width: 100%
+			margin: 0 auto
+		.primary-btn
+			max-width: 446px
+			width: 100%
+			font-size: 40px
+			padding: 13.5px 20px 10.5px
+	&-bottom
+		padding: 90px 0 67px
+		text-align: center
+		.product-head
+			margin-bottom: 10px
+		p
+			margin-bottom: 65px
+		.wrapper
+			max-width: 1685px
+	&-row
+		display: flex
+		flex-flow: row wrap
+		margin: 0 -32.5px 36px
+	&-col
+		width: 33.333%
+		padding: 0 32.5px 30px
+
+.reviews
+	&-title
+		display: block
+		font-size: 64px
+		line-height: 1
+		font-weight: bold
+		color: #fff
+		text-transform: capitalize
+		margin: 0 0 20px
+		text-align: center
+	&-bottom
+		background: #437D3A
+		padding: 51px 0 70px
+		.wrapper
+			max-width: 1507px
+	&-block
+		margin-bottom: 44px
+		p
+			font-size: 35px
+			line-height: 1
+			color: #FFFCF8
+			margin-bottom: 9px
+		&:last-child
+			margin-bottom: 0
+	&-stars
+		padding-bottom: 19px
+		img,svg
+			max-width: 132px
+	&-tit
+		display: block
+		font-size: 35px
+		line-height: 1
+		font-weight: bold
+		color: #FFFCF8
+		text-transform: capitalize
+		margin: 0 0 9px
+	&-name
+		display: block
+		font-size: 20px
+		line-height: 1
+		font-weight: normal
+		color: #FFFCF8;
+
+@media only screen and (max-width : 1500px)
+	.product
+		&-img
+			min-width: 500px
+			width: 500px
+		&-middle
+			padding-left: 60px
+			&-info
+				display: block
+				ul
+					padding: 0
+			&-tit
+				margin: 0 auto 20px
+			&-img
+				max-width: 600px
+				width: 100%
+				min-width: auto
+	
+@media only screen and (max-width : 1240px)
+	.product
+		&-img
+			min-width: 400px
+			width: 400px
+			padding: 50px
+		&-main
+			padding-left: 50px
+		&-middle
+			padding-left: 40px
+
+@media only screen and (max-width : 1000px)
+	.product
+		&-top
+			padding: 80px 0
+			.wrapper
+				display: block
+		&-img
+			max-width: 500px
+			margin: 0 auto
+			min-width: auto
+			width: 100%
+			padding: 0
+			img,svg
+				max-width: 400px
+		&-main
+			padding: 0
+		&-row
+			margin: 0 -15px
+		&-col
+			padding: 0 15px 30px
+		&-bottom
+			padding: 80px 0
+			p
+				margin-bottom: 30px
+
+@media only screen and (max-width : 768px)
+	.product
+		&-head
+			font-size: 40px
+			margin-bottom: 20px
+		&-top,&-middle,&-bottom,&-block
+			p
+				font-size: 27px
+				&.product-small
+					font-size: 22px
+		&-bl
+			padding: 13px
+			&-title
+				font-size: 30px
+		&-block
+			.primary-btn
+				font-size: 24px
+		&-middle
+			display: block
+			padding: 40px 15px
+			&-tit
+				font-size: 40px
+				min-width: auto
+				width: 100%
+			&-info
+				padding: 0 0 30px
+				ul
+					li
+						font-size: 27px
+						line-height: 30px
+						margin: 5px 0
+						padding-left: 30px
+						&::after
+							width: 20px
+							height: 20px
+							top: 2px
+			&-img
+				width: 100%
+				max-width: 100%
+		&-bottom
+			padding: 60px 0
+	.reviews
+		&-bottom
+			padding: 60px 0
+		&-title
+			font-size: 40px
+		&-block
+			p
+				font-size: 27px
+		&-tit
+			font-size: 30px
+
+@media only screen and (max-width : 540px)
+	.product
+		&-col
+			width: 100%

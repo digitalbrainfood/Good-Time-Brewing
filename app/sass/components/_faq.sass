@@ -1,0 +1,55 @@
+@import "vars"
+
+.faq
+
+#accordion
+	max-width: 1304px
+	margin: 0 auto
+
+#accordion > div
+	height: 0
+	transition: height .5s
+	overflow: hidden
+	border-bottom: 1px solid #2A502C
+	p
+		font-size: 27px
+		line-height: 1.2
+		padding-bottom: 27px
+
+.tabs__tit
+	display: block
+	cursor: pointer
+	font-size: 35px
+	line-height: 1
+	font-weight: normal
+	color: #2A502C
+	padding: 16px 249px 15px 0
+	position: relative
+	&::after
+		content: '+'
+		position: absolute
+		top: 50%
+		right: 20px
+		transform: translate(0,-50%)
+		font-size: 27px
+		line-height: 1
+		font-weight: bold
+		color: #2A502C
+		transition: transform $transition
+	&.select
+		&::after
+			transform: translate(0,-50%) rotate(45deg)
+
+@media only screen and (max-width : 1000px)
+	.tabs__tit
+		padding-right: 60px
+
+@media only screen and (max-width : 768px)
+	.tabs__tit
+		font-size: 27px
+		padding-right: 40px
+		&::after
+			right: 10px
+	#accordion>div p
+		font-size: 24px
+		padding-bottom: 24px

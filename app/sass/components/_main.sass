@@ -1,0 +1,105 @@
+@import "vars"
+
+.main
+	position: relative
+	&-bg
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+		&-mob
+			display: none
+	.wrapper
+		max-width: 1410px
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		min-height: 788px
+		position: relative
+		z-index: 10
+	&-info
+		max-width: 700px
+		width: 100%
+		padding-top: 135px
+		text-align: center
+		p
+			font-size: 41px
+			line-height: 1
+			color: #fff
+			margin-bottom: 20px
+		.primary-btn
+			min-width: 300px
+	&-title
+		display: block
+		font-size: 60px
+		line-height: 1.09
+		font-weight: bold
+		color: #fff
+		text-transform: capitalize
+		margin: 0 0 20px
+
+@media only screen and (max-width : 1500px)
+	.main
+		&-title
+			font-size: 60px
+		&-info
+			max-width: 640px
+			.primary-btn
+				min-width: auto
+
+@media only screen and (max-width : 1240px)
+	.main
+		&-bg
+			background-position: 60% center
+		.wrapper
+			min-height: 600px
+
+@media only screen and (max-width : 1000px)
+	.main
+		&-bg
+			background-position: 44% center
+		&-info
+			max-width: 500px
+			padding-top: 0
+		&-title
+			font-size: 46px
+
+@media only screen and (max-width : 768px)
+	.main
+		padding-top: 80px
+		.wrapper
+			align-items: center
+			justify-content: center
+			min-height: calc(100vh - 80px)
+		&-bg
+			display: none
+			background-position: center
+			&-mob
+				display: block
+			&::after
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background-color: rgba(#000, 0.5)
+		&-info
+			max-width: 420px
+			padding: 40px 0
+			p
+				font-size: 28px
+				margin-bottom: 30px
+			.primary-btn
+				min-width: 290px
+		&-title
+			font-size: 38px
+
+@media only screen and (max-width : 540px)
+	.main
+		&-title
+			font-size: 36px
