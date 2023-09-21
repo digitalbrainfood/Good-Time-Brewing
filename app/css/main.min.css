@@ -556,7 +556,7 @@ img, svg {
 }
 
 .header-logo img, .header-logo svg {
-    max-width: 200px
+    max-width: 175px
 }
 
 .header-menu, .header-menu ul {
@@ -1119,14 +1119,14 @@ img, svg {
 
 .about-descr p {
     margin: 0 auto 48px;
-    font-size: 35px;
+    font-size: 27px;
     line-height: 35px;
     color: #fff
 }
 
 .about-title {
     display: block;
-    font-size: 65px;
+    font-size: 45px;
     line-height: 1;
     font-weight: 700;
     color: #fff;
@@ -1183,7 +1183,7 @@ img, svg {
 
 .about-info-tit {
     display: block;
-    font-size: 65px;
+    font-size: 45px;
     line-height: 1;
     font-weight: 700;
     color: #2a502c;
@@ -1232,7 +1232,7 @@ img, svg {
 
 .about-join-title {
     display: block;
-    font-size: 64px;
+    font-size: 45px;
     line-height: 1;
     font-weight: 700;
     color: #2a502c;
@@ -1507,7 +1507,7 @@ img, svg {
     }
 
     .about-join-wrap p {
-        font-size: 40px
+        font-size: 27px
     }
 }
 
@@ -1590,7 +1590,7 @@ img, svg {
     }
 
     .about-info p {
-        font-size: 28px;
+        font-size: 27px;
         line-height: 1.3;
         margin-bottom: 30px
     }
